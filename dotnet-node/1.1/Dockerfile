@@ -1,8 +1,6 @@
 FROM microsoft/dotnet:1.1-runtime
 
-RUN apt-get update
-
-RUN apt-get install -y curl xz-utils
+RUN apt-get update && apt-get install -y curl xz-utils
 
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
