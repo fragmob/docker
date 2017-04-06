@@ -1,0 +1,1 @@
+docker build -t fragmob/dotnet-node:1.1 .
